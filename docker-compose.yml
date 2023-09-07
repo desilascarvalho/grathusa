@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  grathusa:
+    image: desilascarvalho/grathusa:latest
+    container_name: grathusa
+    volumes:
+      - /opt/grathusa:/grathusa
+      - /opt/grathusa/news_id:/grathusa/news_id
+      - /mnt/unionfs/Media/Music:/downloads
+    command: ["python", "new_artists.py"]
+    logging:
+      driver: json-file

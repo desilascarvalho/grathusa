@@ -1,0 +1,50 @@
+{
+    "check_update": 1,
+    "debug_mode": false,
+    "release_channel": "stable",
+    "query_limit": 5,
+    "smart_search": true,
+    "rollback_view_limit": 10,
+    "prompt_duplicates": false,
+    "prompt_no_matches": true,
+    "fast_api": true,
+    "fast_api_threads": 25,
+    "exclusions": {
+        "enable_exclusions": true,
+        "patterns": [],
+        "keywords": []
+    },
+    "new_releases": {
+        "release_max_age": 90,
+        "include_unofficial": false,
+        "include_compilations": false,
+        "include_featured_in": false
+    },
+    "global": {
+        "bitrate": "128",
+        "alerts": false,
+        "record_type": "all",
+        "download_path": "/downloads",
+        "email": ""
+    },
+    "deemix": {
+        "path": "",
+        "arl": "bb6387dbb9006c83e76c3914c74586b9734538f745926a83a51b0a9339f2b39f79140059ce3ee0a14b66f68e2a082fb33c2c5e33bdbef7e049a9454ba7b8ff4c71d41e6b46a253a0c9f1381516636e2c987ac995337ec2ae86d73e0bad87e5a4",
+        "check_account_status": true,
+        "halt_download_on_error": false
+    },
+    "smtp_settings": {
+        "server": "",
+        "port": 465,
+        "starttls": false,
+        "username": "",
+        "password": "",
+        "from_addr": ""
+    },
+    "plex": {
+        "base_url": "",
+        "ssl_verify": true,
+        "token": "",
+        "library": ""
+    }
+}
