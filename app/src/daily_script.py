@@ -9,15 +9,14 @@ logging.basicConfig(stream=sys.stdout, level=logging.INFO, format='%(asctime)s -
 
 def main():
     today = datetime.datetime.today().date()
-    yesterday = today - datetime.timedelta(days=1)
 
     while True:
-	# Importe o que existe e verifique novos albums
+        # Importe o que os artistas existentes
         run_import_command()
         wait_seconds(10)
 
-	# Verifique novamente novos albums
-        run_refresh_command(yesterday)
+        # Verifique novos albums
+        run_refresh_command()
         wait_seconds(86400)
 
         logging.info("Próximo ciclo de execução.")
