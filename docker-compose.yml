@@ -5,9 +5,8 @@ services:
     image: desilascarvalho/grathusa:latest
     container_name: grathusa
     volumes:
-      - /opt/grathusa:/grathusa
-      - /opt/grathusa/news_id:/grathusa/news_id
-      - /mnt/unionfs/Media/Music:/downloads
-    command: ["python", "new_artists.py"]
+      - /your/local/path:/grathusa
+      - /your/local/path/news_id:/grathusa/news_id
+      - /your/library/music/path:/downloads
     logging:
       driver: json-file
