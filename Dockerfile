@@ -21,4 +21,4 @@ COPY app/config/config_deemix.json /root/.config/deemix/config.json
 COPY app/src/* /opt/grathusa/
 
 # Execute o script Python como comando de entrada
-CMD ["python", "coordenador.py"]
+CMD ["python", "main.py"]
